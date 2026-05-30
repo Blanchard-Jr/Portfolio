@@ -1,29 +1,34 @@
 import Title from "./Title";
-import img from '../assets/Photo.jpg';
-import { Network, Server, BrickWall } from "lucide-react";
+import { Network, Shield, Server, Cpu } from "lucide-react";
 
 const aboutSections = [
     {
         id: 1,
-        title: "Compétences en systèmes",
-        description: `Je suis spécialisé dans la gestion des serveurs Windows et Linux, la virtualisation (VMware, Hyper-V) et la gestion des environnements Cloud tels qu'Azure et AWS. 
-        J'assure également la mise en place et la gestion des sauvegardes, la supervision des performances, et l'automatisation des tâches grâce à des scripts PowerShell et Bash.`,
-        icon: <Server className="text-accent scale-150" />,
-    },
-    {
-        id: 2,
-        title: "Compétences en réseaux",
-        description: `Je maîtrise la gestion et la configuration des réseaux informatiques, incluant la conception et l'administration des VLAN, la configuration des switchs et routeurs (Cisco, Aruba) et la gestion des réseaux sans fil (Wi-Fi). 
-        Je suis également expérimenté dans la mise en place et la gestion des VPN, ainsi que dans l'optimisation des performances et de la disponibilité des réseaux d'entreprise.`,
+        title: "Routing & Switching",
+        description: `Conception et administration de réseaux d'entreprise : VLANs, trunking 802.1Q, routage inter-VLAN, protocoles dynamiques OSPF et EIGRP, redondance HSRP, agrégation EtherChannel.
+        Équipements maîtrisés : Cisco IOS (routeurs & switchs), Aruba.`,
         icon: <Network className="text-accent scale-150" />,
     },
     {
+        id: 2,
+        title: "Firewall & Sécurité réseau",
+        description: `Déploiement et administration de FortiGate : politiques firewall, NAT, VPN IPsec, IPS et Application Control.
+        Préparation active à la certification Fortinet NSE4. Pratique de Kali Linux pour l'audit et les tests de sécurité en environnement lab.`,
+        icon: <Shield className="text-accent scale-150" />,
+    },
+    {
         id: 3,
-        title: "Compétences en firewall et sécurité",
-        description: `Disposant de solides connaissances en sécurité des infrastructures, je mets en place des pare-feu (FortiGate, pfSense) et des solutions IDS/IPS pour prévenir les intrusions. 
-        Je réalise des audits de sécurité, configure des VPN sécurisés, applique des politiques d'accès et de filtrage, et implémente des solutions de gestion des identités et des accès (IAM). 
-        Je veille également à la conformité des systèmes avec les bonnes pratiques et normes en matière de cybersécurité.`,
-        icon: <BrickWall className="text-accent scale-150" />,
+        title: "SD-WAN & Architectures modernes",
+        description: `Mise en œuvre d'architectures SD-WAN multi-WAN avec FortiGate : load balancing, supervision SLA, basculement automatique.
+        Conception de topologies hiérarchiques 3-Tier (Core / Distribution / Access) et architectures multi-sites.`,
+        icon: <Cpu className="text-accent scale-150" />,
+    },
+    {
+        id: 4,
+        title: "Systèmes & Automatisation",
+        description: `Administration Windows Server (AD DS, DNS, DHCP, Hyper-V) et Linux (Debian/Ubuntu).
+        Automatisation avec PowerShell, Bash et Python. Déploiement de configurations réseau via Ansible en environnement lab.`,
+        icon: <Server className="text-accent scale-150" />,
     },
 ];
 
@@ -31,37 +36,32 @@ const About = () => {
   return (
     <div className="bg-base-300 p-10 mb-10 md:mb-32" id="About">
       <Title title="À propos" />
-      <div className="md:h-screen flex justify-center items-center">
-        {/* Image Section */}
-        <div className="hidden md:block">
-          <img
-            src={img}
-            alt="Photo de profil"
-            className="w-96 object-cover rounded-xl"
-          />
-        </div>
 
-        {/* Information Section */}
-        <div className="md:ml-4 space-y-4">
-          {aboutSections.map((section) => (
-            <div 
-              key={section.id}
-              className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl"
-            >
-              <div className="mb-2 md:mb-0">
-                {section.icon}
-              </div>
-              <div className="md:ml-4 text-center md:text-left">
-                <h2 className="text-xl font-bold mb-1">
-                  {section.title}
-                </h2>
-                <p className="text-sm">
-                  {section.description}
-                </p>
-              </div>
+      {/* Intro */}
+      <p className="text-center text-sm text-gray-400 max-w-2xl mx-auto mb-10">
+        Administrateur systèmes & réseaux en transition vers l'ingénierie réseaux & sécurité.
+        Après l'obtention du <span className="text-accent font-semibold">CCNA 200-301</span>, je construis
+        une expertise sur les solutions <span className="text-accent font-semibold">Fortinet</span> dans
+        le cadre de ma préparation au <span className="text-accent font-semibold">NSE4</span>.
+        Je documente chaque lab pour démontrer mes compétences de manière concrète.
+      </p>
+
+      {/* Grille compétences centrée */}
+      <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+        {aboutSections.map((section) => (
+          <div
+            key={section.id}
+            className="flex flex-col bg-base-100 p-5 rounded-xl shadow-xl"
+          >
+            <div className="flex items-center gap-4 mb-3">
+              <div>{section.icon}</div>
+              <h2 className="text-lg font-bold">{section.title}</h2>
             </div>
-          ))}
-        </div>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              {section.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

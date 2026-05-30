@@ -12,26 +12,50 @@ const Home = () => {
           </h1>
 
           <p className="my-4 text-md text-center md:text-left">
-            Passionné par les technologies de l'information, je possède plusieurs années d'expérience en administration systèmes et réseaux.
+            Ingénieur Réseaux & Sécurité — CCNA 200-301 | Préparation Fortinet NSE4
             <br />
-            J'ai développé des compétences solides dans la gestion des infrastructures IT, la sécurité des réseaux, et le support technique.
+            Passionné par les architectures réseau, la sécurité des infrastructures et les solutions SD-WAN.
+            Je conçois et documente des labs techniques sur Packet Tracer et PNetLab pour mettre en pratique
+            les concepts étudiés en environnement réel.
           </p>
-          <a href="" className=" btn btn-accent md:w-fit">
-            <Mail className="w-5 h-5" />
-            Contactez-moi
-          </a>
+
+          <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+            <a href="#Contact" className="btn btn-accent md:w-fit">
+              <Mail className="w-5 h-5" />
+              Contactez-moi
+            </a>
+            <a href="https://github.com/Blanchard-Jr/labs-reseau-securite"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="btn btn-outline md:w-fit">
+              Voir mes Labs
+            </a>
+          </div>
+
+          {/* Badges certifications */}
+          <div className="flex flex-wrap gap-2 mt-6 justify-center md:justify-start">
+            <span className="badge badge-accent badge-lg">🏅 CCNA 200-301</span>
+            <span className="badge badge-outline badge-lg">🔥 Fortinet NSE4 en cours</span>
+          </div>
 
         </div>
 
+        {/* Photo — cadre professionnel carré avec bordure fine */}
         <div className="md:ml-60">
-            <img src={img} alt="" className="w-96 h-96 object-cover border-8 border-accent shadow-xl" style={{
-                borderRadius : "30% 70% 70% 30% / 67% 62% 38% 33%"
-            }}/>
-
+          <div className="relative w-80 h-80">
+            {/* Carré décoratif décalé derrière */}
+            <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border-2 border-accent opacity-40"></div>
+            {/* Photo */}
+            <img
+              src={img}
+              alt="Blanchard Koubemba"
+              className="relative w-80 h-80 object-cover rounded-2xl shadow-2xl"
+            />
+          </div>
         </div>
+
       </div>
     )
   }
-  
-  export default Home;
-  
+
+export default Home;

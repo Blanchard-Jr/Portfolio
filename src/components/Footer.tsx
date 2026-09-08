@@ -6,7 +6,7 @@ const Footer = () => {
                     Blanchard<span className="text-accent ml-2">Koubemba</span>
                 </p>
                 <p className="text-sm text-gray-400">
-                    Copyright © {new Date().getFullYear()} — Ingénieur Réseaux & Sécurité
+                    Copyright © {new Date().getFullYear()} — Administrateur Réseaux & Sécurité
                 </p>
             </aside>
         </footer>

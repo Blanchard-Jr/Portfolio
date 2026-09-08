@@ -90,4 +90,4 @@ Le déploiement est automatique via **Netlify** à chaque push sur la branche `m
 |-|-|
 | 📧 Email | blanchardkoubemba@gmail.com |
 | 💼 LinkedIn | [blanchard-koubemba](https://www.linkedin.com/in/blanchard-koubemba-a9524ab5/) |
-| 🌐 Portfolio | [blanchard-koubemba.netlify.app](https://blanchard-koubemba.netlify.app) |
+| 🌐 Portfolio | [blanchard-koubemba.netlify.app](https://velvety-lolly-6d76ef.netlify.app/) |

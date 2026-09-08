@@ -3,7 +3,7 @@
 > **Administrateur Réseaux & Sécurité | CCNA 200-301 | Fortinet FCP Network Security**  
 > Portfolio technique présentant mon parcours, mes expériences et mes labs réseau & sécurité.
 
-[![Portfolio](https://img.shields.io/badge/🌐_Voir_le_portfolio-blanchard--koubemba.netlify.app-accent)](https://blanchard-koubemba.netlify.app)
+[![Portfolio](https://img.shields.io/badge/🌐_Voir_le_portfolio-blanchard--koubemba.netlify.app-accent)](https://velvety-lolly-6d76ef.netlify.app/)
 [![CCNA](https://img.shields.io/badge/Cisco-CCNA_200--301-blue?logo=cisco)](https://cp.certmetrics.com/cisco/en/public/verify/credential/328896ebc1b041579c057d945b48aff6)
 [![FCP](https://img.shields.io/badge/Fortinet-FCP_Network_Security-red?logo=fortinet)](https://training.fortinet.com)
 

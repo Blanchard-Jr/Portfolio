@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio — Blanchard Koubemba
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Administrateur Réseaux & Sécurité | CCNA 200-301 | Fortinet FCP Network Security**  
+> Portfolio technique présentant mon parcours, mes expériences et mes labs réseau & sécurité.
 
-Currently, two official plugins are available:
+[![Portfolio](https://img.shields.io/badge/🌐_Voir_le_portfolio-blanchard--koubemba.netlify.app-accent)](https://blanchard-koubemba.netlify.app)
+[![CCNA](https://img.shields.io/badge/Cisco-CCNA_200--301-blue?logo=cisco)](https://cp.certmetrics.com/cisco/en/public/verify/credential/328896ebc1b041579c057d945b48aff6)
+[![FCP](https://img.shields.io/badge/Fortinet-FCP_Network_Security-red?logo=fortinet)](https://training.fortinet.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 👤 À propos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Administrateur Réseaux & Sécurité certifié **Cisco CCNA 200-301**, avec une expérience dans l'exploitation et le maintien en condition opérationnelle d'infrastructures multi-sites.
 
-- Configure the top-level `parserOptions` property like this:
+En cours de préparation à la certification **Fortinet FCP Network Security**, avec pour objectif d'évoluer vers un poste d'Ingénieur Réseaux & Sécurité.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📋 Contenu du portfolio
+
+| Section | Description |
+|---------|-------------|
+| 🏠 **Accueil** | Présentation et positionnement professionnel |
+| 👤 **À propos** | Compétences : Réseau, Firewall, SD-WAN, Systèmes |
+| 💼 **Expériences** | Atos, Endrix, Fokus IT, Samat |
+| 🔬 **Labs récents** | Labs post-CCNA : FortiGate SD-WAN, OSPF, 3-Tier |
+| 📁 **Projets formation** | Projets réalisés en formation sysadmin |
+| 📬 **Contact** | Email, téléphone, LinkedIn, GitHub |
+
+---
+
+## 🛠️ Stack technique
+
+| Technologie | Usage |
+|-------------|-------|
+| **React 18** | Framework UI |
+| **TypeScript** | Typage statique |
+| **Vite** | Build tool & dev server |
+| **Tailwind CSS** | Styling utilitaire |
+| **DaisyUI** | Composants UI |
+| **Lucide React** | Icônes |
+| **Netlify** | Déploiement continu |
+
+---
+
+## 🚀 Lancer le projet en local
+
+```bash
+# Cloner le repo
+git clone https://github.com/Blanchard-Jr/Portfolio.git
+cd Portfolio
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
+# → http://localhost:5173
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📦 Build & Déploiement
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+# Build de production
+npm run build
+
+# Prévisualiser le build
+npm run preview
 ```
+
+Le déploiement est automatique via **Netlify** à chaque push sur la branche `master`.
+
+---
+
+## 🔗 Mes repos GitHub
+
+| Repo | Description |
+|------|-------------|
+| [labs-reseau-securite](https://github.com/Blanchard-Jr/labs-reseau-securite) | Labs techniques post-CCNA — FortiGate, OSPF, SD-WAN |
+| [projets-techniques](https://github.com/Blanchard-Jr/projets-techniques) | Projets de formation — Administration Systèmes & Réseaux |
+
+---
+
+## 📬 Contact
+
+| | |
+|-|-|
+| 📧 Email | blanchardkoubemba@gmail.com |
+| 💼 LinkedIn | [blanchard-koubemba](https://www.linkedin.com/in/blanchard-koubemba-a9524ab5/) |
+| 🌐 Portfolio | [blanchard-koubemba.netlify.app](https://blanchard-koubemba.netlify.app) |

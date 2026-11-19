@@ -115,7 +115,7 @@ export default function Home() {
               onError={(e) => {
                 e.currentTarget.style.display = "none";
               }}
-              className="h-20 w-20 shrink-0 rounded-full border-2 border-line object-cover shadow-md"
+              className="h-28 w-28 md:h-32 md:w-32 shrink-0 rounded-full border-2 border-line object-cover shadow-md"
             />
 
             {/* Identité */}

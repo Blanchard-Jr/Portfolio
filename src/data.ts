@@ -1,3 +1,6 @@
+
+import photo from "./assets/blanchard-koubemba.jpg";
+
 export const profile = {
   name: "Blanchard KOUBEMBA",
   role: "Administrateur Systèmes & Réseaux",
@@ -9,14 +12,26 @@ export const profile = {
   github: "https://github.com/Blanchard-Jr",
   labsRepo: "https://github.com/Blanchard-Jr/labs-reseau-securite",
   cv: "/CV_Blanchard_Koubemba.pdf",
-  photo: "/photo.jpg",
+  photo: photo,
 };
 
 export const figures = [
-  { value: "150+", label: "établissements de santé sur la plateforme que j'exploite" },
-  { value: "800", label: "collaborateurs sur le SI que j'ai administré" },
-  { value: "300+", label: "postes déployés sous Windows 10 et Linux" },
-  { value: "5+ ans", label: "en environnements multi-sites" },
+  {
+    value: "150+",
+    label: "établissements de santé sur la plateforme que j'exploite",
+  },
+  {
+    value: "800",
+    label: "collaborateurs sur le SI que j'ai administré",
+  },
+  {
+    value: "300+",
+    label: "postes déployés sous Windows 10 et Linux",
+  },
+  {
+    value: "5+ ans",
+    label: "en environnements multi-sites",
+  },
 ];
 
 export const skills = [
@@ -62,20 +77,35 @@ export const certifications = [
   {
     name: "Cisco CCNA 200-301",
     status: "Obtenue",
-    verifyUrl: "https://cp.certmetrics.com/cisco/en/public/verify/credential/328896ebc1b041579c057d945b48aff6",
-    detail: "Commutation, VLAN, EtherChannel, routage IPv4/IPv6, NAT, ACL, dépannage.",
+    verifyUrl:
+      "https://cp.certmetrics.com/cisco/en/public/verify/credential/328896ebc1b041579c057d945b48aff6",
+    detail:
+      "Commutation, VLAN, EtherChannel, routage IPv4/IPv6, NAT, ACL, dépannage.",
   },
   {
     name: "Fortinet FCP Network Security",
     status: "En préparation",
-    detail: "Administration FortiGate, politiques, NAT, VPN IPsec/SSL, SD-WAN.",
+    detail:
+      "Administration FortiGate, politiques, NAT, VPN IPsec/SSL, SD-WAN.",
   },
 ];
 
 export const formations = [
-  { year: "2024", title: "Administrateur Systèmes, Réseaux et Sécurité (Bac+4)", school: "OpenClassrooms" },
-  { year: "2021", title: "Bachelor Responsable Ingénierie Systèmes & Réseaux", school: "CESI Dijon" },
-  { year: "2020", title: "Mastère I Électronique, Énergie électrique et Automatique", school: "Université de Lorraine, Nancy" },
+  {
+    year: "2024",
+    title: "Administrateur Systèmes, Réseaux et Sécurité (Bac+4)",
+    school: "OpenClassrooms",
+  },
+  {
+    year: "2021",
+    title: "Bachelor Responsable Ingénierie Systèmes & Réseaux",
+    school: "CESI Dijon",
+  },
+  {
+    year: "2020",
+    title: "Mastère I Électronique, Énergie électrique et Automatique",
+    school: "Université de Lorraine, Nancy",
+  },
 ];
 
 export const experiences = [
@@ -115,7 +145,8 @@ export const experiences = [
     company: "Fokus IT (client Fives CorTX)",
     period: "Avril à novembre 2023",
     place: "Lyon",
-    context: "Maintien en condition opérationnelle de l'infrastructure et support N2.",
+    context:
+      "Maintien en condition opérationnelle de l'infrastructure et support N2.",
     points: [
       "Administration Windows Server et Active Directory (DHCP, GPO, WSUS).",
       "Supervision et analyse des événements avec Graylog et Splunk.",
@@ -140,7 +171,8 @@ export const experiences = [
     company: "Yoplait",
     period: "Octobre 2020 à août 2021",
     place: "Auxerre",
-    context: "Gestion du parc informatique, déploiement de postes et incidents N1/N2.",
+    context:
+      "Gestion du parc informatique, déploiement de postes et incidents N1/N2.",
     points: [],
     tools: "",
   },
@@ -151,7 +183,8 @@ export const labs = [
     title: "VPN IPsec site-à-site entre un siège et une agence",
     summary:
       "Deux sites reliés par un tunnel IPsec via Internet, avec des FortiGate des deux côtés. Le siège segmente ses postes en trois VLAN (10, 20, 30) derrière un cœur de réseau. L’agence héberge un datacenter avec AD, DNS, DHCP, fichiers, GLPI et Zabbix.",
-    tools: "FortiGate, IPsec, VLAN, Cisco IOS, Windows Server, Linux, EVE-NG",
+    tools:
+      "FortiGate, IPsec, VLAN, Cisco IOS, Windows Server, Linux, EVE-NG",
     status: "Projet phare",
   },
   {

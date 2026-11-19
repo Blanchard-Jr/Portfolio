@@ -143,8 +143,8 @@ export default function Home() {
           {/* Actions */}
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={profile.cv}
-              download
+              href="/CV-Blanchard-Koubemba.pdf"
+              download="CV-Blanchard-Koubemba.pdf"
               className="inline-flex items-center gap-2 rounded bg-accent px-5 py-2.5 font-medium text-surface"
             >
               <Download size={18} />
